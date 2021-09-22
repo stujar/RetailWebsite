@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/retailwebsite?serverTimezone=UTC
+#    url: jdbc:h2:mem:retailwebsite
+#    url: jdbc:postgresql://localhost:5432/retailwebsite
+    username: jman
+    password: IaaCS2013
+#    driver-class-name: org.postgresql.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    driver-class-name: org.h2.Driver
+  jpa:
+#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+#    database-platform: org.hibernate.dialect.H2Dialect
